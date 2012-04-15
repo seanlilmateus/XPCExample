@@ -2,8 +2,7 @@
 #  rb_main.rb
 #  XPCExample
 #
-#  Created by Mateus Armando on 15.04.12.
-#  Copyright 2012 Sean Coorp. INC. All rights reserved.
+#  Created by Mateus on 30.03.12.
 #
 framework 'Foundation'
 framework 'Cocoa'

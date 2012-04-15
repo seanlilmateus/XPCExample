@@ -2,8 +2,7 @@
 #  rb_main.rb
 #  XPCExample
 #
-#  Created by Mateus Armando on 30.03.12.
-#  Copyright (c) 2012 Sean Coorp. INC. All rights reserved.
+#  Created by Mateus on 30.03.12.
 #
 
 # Loading the Cocoa framework. If you need to load more frameworks, you can

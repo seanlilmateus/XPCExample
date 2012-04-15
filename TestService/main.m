@@ -2,8 +2,7 @@
 //  main.m
 //  TestService
 //
-//  Created by Mateus Armando on 15.04.12.
-//  Copyright (c) 2012 Sean Coorp. INC. All rights reserved.
+//  Created by Mateus on 30.03.12.
 //
 
 #include <xpc/xpc.h>
