@@ -1,4 +1,5 @@
 //
 // Prefix header for all source files of the 'TestService' target in the 'TestService' project
 //
+#import <xpc/xpc.h>
 

@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:XPCKit.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:README.md">
+      location = "self:XPCExample.xcodeproj">
    </FileRef>
 </Workspace>
