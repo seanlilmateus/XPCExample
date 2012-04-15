@@ -1,6 +1,7 @@
 //
 // Prefix header for all source files of the 'XPCExample' target in the 'XPCExample' project
 //
+#import <xpc/xpc.h>
 
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>

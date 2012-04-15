@@ -7,16 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FE70A45153B04AE003D8D69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE70A44153B04AE003D8D69 /* Foundation.framework */; };
+		4FE70A4B153B04AE003D8D69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FE70A49153B04AE003D8D69 /* InfoPlist.strings */; };
+		4FE70A4E153B04AE003D8D69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE70A4D153B04AE003D8D69 /* main.m */; };
+		4FE70A54153B04E7003D8D69 /* de.mateus.macruby.TestService.xpc in Copy Services */ = {isa = PBXBuildFile; fileRef = 4FE70A43153B04AE003D8D69 /* de.mateus.macruby.TestService.xpc */; };
+		4FE70A84153B0862003D8D69 /* TestService.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 4FE70A83153B0862003D8D69 /* TestService.entitlements */; };
+		4FE70ADD153B0FE3003D8D69 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FEB2BA215260D1F00B7BDD2 /* MacRuby.framework */; };
+		4FE70AE5153B1E70003D8D69 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4FE70AE4153B1E70003D8D69 /* rb_main.rb */; };
+		4FE70AFB153B2A44003D8D69 /* XPCKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FE70AF9153B2A37003D8D69 /* XPCKit.framework */; };
+		4FE70AFE153B2A5A003D8D69 /* XPCKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FE70AF9153B2A37003D8D69 /* XPCKit.framework */; };
 		4FEB2B55152609FE00B7BDD2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FEB2B54152609FE00B7BDD2 /* Cocoa.framework */; };
-		4FEB2B57152609FE00B7BDD2 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FEB2B56152609FE00B7BDD2 /* MacRuby.framework */; };
 		4FEB2B60152609FE00B7BDD2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FEB2B5E152609FE00B7BDD2 /* InfoPlist.strings */; };
 		4FEB2B62152609FE00B7BDD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB2B61152609FE00B7BDD2 /* main.m */; };
 		4FEB2B67152609FF00B7BDD2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FEB2B65152609FF00B7BDD2 /* MainMenu.xib */; };
 		4FEB2B6A152609FF00B7BDD2 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4FEB2B69152609FF00B7BDD2 /* rb_main.rb */; };
 		4FEB2B6C152609FF00B7BDD2 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4FEB2B6B152609FF00B7BDD2 /* AppDelegate.rb */; };
+		4FEB2BA715260D5900B7BDD2 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FEB2BA215260D1F00B7BDD2 /* MacRuby.framework */; };
+		4FEB2BB6152611ED00B7BDD2 /* multiply.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FEB2BB5152611ED00B7BDD2 /* multiply.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4FE70A52153B04C1003D8D69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FEB2B47152609FE00B7BDD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FE70A42153B04AE003D8D69;
+			remoteInfo = TestService;
+		};
 		4FEB2B59152609FE00B7BDD2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4FEB2B47152609FE00B7BDD2 /* Project object */;
@@ -26,36 +43,112 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4FE70AEE153B2787003D8D69 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4FE70AFE153B2A5A003D8D69 /* XPCKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FEB2BAB15260DBC00B7BDD2 /* Copy Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/XPCServices;
+			dstSubfolderSpec = 1;
+			files = (
+				4FE70A54153B04E7003D8D69 /* de.mateus.macruby.TestService.xpc in Copy Services */,
+			);
+			name = "Copy Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FEB2BAF15260F7D00B7BDD2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4FE70AFB153B2A44003D8D69 /* XPCKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4FE70A43153B04AE003D8D69 /* de.mateus.macruby.TestService.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = de.mateus.macruby.TestService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FE70A44153B04AE003D8D69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4FE70A48153B04AE003D8D69 /* TestService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestService-Info.plist"; sourceTree = "<group>"; };
+		4FE70A4A153B04AE003D8D69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4FE70A4C153B04AE003D8D69 /* TestService-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestService-Prefix.pch"; sourceTree = "<group>"; };
+		4FE70A4D153B04AE003D8D69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4FE70A83153B0862003D8D69 /* TestService.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestService.entitlements; sourceTree = "<group>"; };
+		4FE70AE4153B1E70003D8D69 /* rb_main.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		4FE70AF9153B2A37003D8D69 /* XPCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XPCKit.framework; path = Frameworks/XPCKit.framework; sourceTree = "<group>"; };
 		4FEB2B50152609FE00B7BDD2 /* XPCExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPCExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEB2B54152609FE00B7BDD2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		4FEB2B56152609FE00B7BDD2 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
-		4FEB2B5D152609FE00B7BDD2 /* XPCExample-Info.plist */ = {isa = PBXFileReference; path = "XPCExample-Info.plist"; sourceTree = "<group>"; };
+		4FEB2B5D152609FE00B7BDD2 /* XPCExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XPCExample-Info.plist"; sourceTree = "<group>"; };
 		4FEB2B5F152609FE00B7BDD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4FEB2B61152609FE00B7BDD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4FEB2B63152609FE00B7BDD2 /* XPCExample-Prefix.pch */ = {isa = PBXFileReference; path = "XPCExample-Prefix.pch"; sourceTree = "<group>"; };
+		4FEB2B63152609FE00B7BDD2 /* XPCExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XPCExample-Prefix.pch"; sourceTree = "<group>"; };
 		4FEB2B66152609FF00B7BDD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4FEB2B69152609FF00B7BDD2 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		4FEB2B6B152609FF00B7BDD2 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		4FEB2BA215260D1F00B7BDD2 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
+		4FEB2BB41526115800B7BDD2 /* XPCExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = XPCExample.entitlements; sourceTree = "<group>"; };
+		4FEB2BB5152611ED00B7BDD2 /* multiply.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = multiply.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4FE70A40153B04AE003D8D69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FE70ADD153B0FE3003D8D69 /* MacRuby.framework in Frameworks */,
+				4FE70A45153B04AE003D8D69 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4FEB2B4D152609FE00B7BDD2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4FEB2B55152609FE00B7BDD2 /* Cocoa.framework in Frameworks */,
-				4FEB2B57152609FE00B7BDD2 /* MacRuby.framework in Frameworks */,
+				4FEB2BA715260D5900B7BDD2 /* MacRuby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FE70A46153B04AE003D8D69 /* TestService */ = {
+			isa = PBXGroup;
+			children = (
+				4FE70A4D153B04AE003D8D69 /* main.m */,
+				4FE70A47153B04AE003D8D69 /* Supporting Files */,
+			);
+			path = TestService;
+			sourceTree = "<group>";
+		};
+		4FE70A47153B04AE003D8D69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FE70A83153B0862003D8D69 /* TestService.entitlements */,
+				4FE70A48153B04AE003D8D69 /* TestService-Info.plist */,
+				4FE70A49153B04AE003D8D69 /* InfoPlist.strings */,
+				4FE70A4C153B04AE003D8D69 /* TestService-Prefix.pch */,
+				4FE70AE4153B1E70003D8D69 /* rb_main.rb */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		4FEB2B45152609FE00B7BDD2 = {
 			isa = PBXGroup;
 			children = (
 				4FEB2B5B152609FE00B7BDD2 /* XPCExample */,
+				4FE70A46153B04AE003D8D69 /* TestService */,
 				4FEB2B53152609FE00B7BDD2 /* Frameworks */,
 				4FEB2B51152609FE00B7BDD2 /* Products */,
 			);
@@ -65,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				4FEB2B50152609FE00B7BDD2 /* XPCExample.app */,
+				4FE70A43153B04AE003D8D69 /* de.mateus.macruby.TestService.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,8 +166,10 @@
 		4FEB2B53152609FE00B7BDD2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4FE70AF9153B2A37003D8D69 /* XPCKit.framework */,
+				4FEB2BA215260D1F00B7BDD2 /* MacRuby.framework */,
 				4FEB2B54152609FE00B7BDD2 /* Cocoa.framework */,
-				4FEB2B56152609FE00B7BDD2 /* MacRuby.framework */,
+				4FE70A44153B04AE003D8D69 /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -92,10 +188,12 @@
 		4FEB2B5C152609FE00B7BDD2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4FEB2BB41526115800B7BDD2 /* XPCExample.entitlements */,
 				4FEB2B5D152609FE00B7BDD2 /* XPCExample-Info.plist */,
 				4FEB2B5E152609FE00B7BDD2 /* InfoPlist.strings */,
 				4FEB2B61152609FE00B7BDD2 /* main.m */,
 				4FEB2B63152609FE00B7BDD2 /* XPCExample-Prefix.pch */,
+				4FEB2BB5152611ED00B7BDD2 /* multiply.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -136,17 +234,38 @@
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
+		4FE70A42153B04AE003D8D69 /* TestService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FE70A4F153B04AE003D8D69 /* Build configuration list for PBXNativeTarget "TestService" */;
+			buildPhases = (
+				4FE70AEE153B2787003D8D69 /* CopyFiles */,
+				4FE70A3F153B04AE003D8D69 /* Sources */,
+				4FE70A40153B04AE003D8D69 /* Frameworks */,
+				4FE70A41153B04AE003D8D69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestService;
+			productName = TestService;
+			productReference = 4FE70A43153B04AE003D8D69 /* de.mateus.macruby.TestService.xpc */;
+			productType = "com.apple.product-type.bundle";
+		};
 		4FEB2B4F152609FE00B7BDD2 /* XPCExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FEB2B6F152609FF00B7BDD2 /* Build configuration list for PBXNativeTarget "XPCExample" */;
 			buildPhases = (
+				4FEB2BAF15260F7D00B7BDD2 /* CopyFiles */,
 				4FEB2B4C152609FE00B7BDD2 /* Sources */,
+				4FEB2BAB15260DBC00B7BDD2 /* Copy Services */,
 				4FEB2B4D152609FE00B7BDD2 /* Frameworks */,
 				4FEB2B4E152609FE00B7BDD2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4FE70A53153B04C1003D8D69 /* PBXTargetDependency */,
 			);
 			name = XPCExample;
 			productName = XPCExample;
@@ -176,11 +295,22 @@
 			targets = (
 				4FEB2B4F152609FE00B7BDD2 /* XPCExample */,
 				4FEB2B58152609FE00B7BDD2 /* Deployment */,
+				4FE70A42153B04AE003D8D69 /* TestService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4FE70A41153B04AE003D8D69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FE70A4B153B04AE003D8D69 /* InfoPlist.strings in Resources */,
+				4FE70A84153B0862003D8D69 /* TestService.entitlements in Resources */,
+				4FE70AE5153B1E70003D8D69 /* rb_main.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4FEB2B4E152609FE00B7BDD2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,12 +319,21 @@
 				4FEB2B67152609FF00B7BDD2 /* MainMenu.xib in Resources */,
 				4FEB2B6A152609FF00B7BDD2 /* rb_main.rb in Resources */,
 				4FEB2B6C152609FF00B7BDD2 /* AppDelegate.rb in Resources */,
+				4FEB2BB6152611ED00B7BDD2 /* multiply.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4FE70A3F153B04AE003D8D69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FE70A4E153B04AE003D8D69 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4FEB2B4C152609FE00B7BDD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +345,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4FE70A53153B04C1003D8D69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FE70A42153B04AE003D8D69 /* TestService */;
+			targetProxy = 4FE70A52153B04C1003D8D69 /* PBXContainerItemProxy */;
+		};
 		4FEB2B5A152609FE00B7BDD2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4FEB2B4F152609FE00B7BDD2 /* XPCExample */;
@@ -214,6 +358,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4FE70A49153B04AE003D8D69 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FE70A4A153B04AE003D8D69 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		4FEB2B5E152609FE00B7BDD2 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -233,10 +385,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4FE70A50153B04AE003D8D69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TestService/TestService.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/XPCKit-azagvahaplxpwzgdsffyimajxcyt/Build/Products/Debug\"",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestService/TestService-Prefix.pch";
+				INFOPLIST_FILE = "TestService/TestService-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/XPCKit-azagvahaplxpwzgdsffyimajxcyt/Build/Products/Debug\"",
+				);
+				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "de.mateus.macruby.$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = xpc;
+			};
+			name = Debug;
+		};
+		4FE70A51153B04AE003D8D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TestService/TestService.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/XPCKit-azagvahaplxpwzgdsffyimajxcyt/Build/Products/Debug\"",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestService/TestService-Prefix.pch";
+				INFOPLIST_FILE = "TestService/TestService-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/XPCKit-azagvahaplxpwzgdsffyimajxcyt/Build/Products/Debug\"",
+				);
+				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "de.mateus.macruby.$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = xpc;
+			};
+			name = Release;
+		};
 		4FEB2B6D152609FF00B7BDD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -262,7 +466,7 @@
 		4FEB2B6E152609FF00B7BDD2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -281,16 +485,29 @@
 		4FEB2B70152609FF00B7BDD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = x86_64;
+				CODE_SIGN_ENTITLEMENTS = XPCExample/XPCExample.entitlements;
+				CODE_SIGN_IDENTITY = "code signing";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../Programming/Projekt X/XPC\"",
+					"\"$(SRCROOT)/Frameworks\"",
+					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/XPCKit-azagvahaplxpwzgdsffyimajxcyt/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../../Library/Frameworks\"",
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XPCExample/XPCExample-Prefix.pch";
+				IBC_PLUGIN_SEARCH_PATHS = "$(inherited) \"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\" \"$(SRCROOT)\" \"$(SRCROOT)/../Programming/Projekt X/XPC\"";
 				INFOPLIST_FILE = "XPCExample/XPCExample-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = "";
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -298,16 +515,29 @@
 		4FEB2B71152609FF00B7BDD2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = x86_64;
+				CODE_SIGN_ENTITLEMENTS = XPCExample/XPCExample.entitlements;
+				CODE_SIGN_IDENTITY = "code signing";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../Programming/Projekt X/XPC\"",
+					"\"$(SRCROOT)/Frameworks\"",
+					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/XPCKit-azagvahaplxpwzgdsffyimajxcyt/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../../Library/Frameworks\"",
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XPCExample/XPCExample-Prefix.pch";
+				IBC_PLUGIN_SEARCH_PATHS = "$(inherited) \"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\" \"$(SRCROOT)\" \"$(SRCROOT)/../Programming/Projekt X/XPC\"";
 				INFOPLIST_FILE = "XPCExample/XPCExample-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = "";
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -327,6 +557,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4FE70A4F153B04AE003D8D69 /* Build configuration list for PBXNativeTarget "TestService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FE70A50153B04AE003D8D69 /* Debug */,
+				4FE70A51153B04AE003D8D69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		4FEB2B4A152609FE00B7BDD2 /* Build configuration list for PBXProject "XPCExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -343,6 +581,7 @@
 				4FEB2B71152609FF00B7BDD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FEB2B72152609FF00B7BDD2 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -351,6 +590,7 @@
 				4FEB2B74152609FF00B7BDD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
