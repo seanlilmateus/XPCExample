@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<string_constant name='XPCConnectionReceivedNotification' nsstring='true' value='XPCConnectionReceivedNotification'/>
+<function name='XPCServiceConnectionHandler'>
+<arg type='^{_xpc_connection_s=}'/>
+</function>
+<class name='XPCConnection'>
+<method selector='setEventHandler:'>
+<arg function_pointer='true' type='@?' index='0'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+</class>
+<class name='XPCService'>
+<method selector='initWithConnectionHandler:'>
+<arg function_pointer='true' type='@?' index='0'>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='runServiceWithConnectionHandler:' class_method='true'>
+<arg function_pointer='true' type='@?' index='0'>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='setConnectionHandler:'>
+<arg function_pointer='true' type='@?' index='0'>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+</class>
+<informal_protocol name='XPCParse'>
+<method type64='@24@0:8^v16' type='@12@0:4^v8' selector='objectWithXPCObject:' class_method='true'/>
+</informal_protocol>
+</signatures>
