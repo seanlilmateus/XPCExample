@@ -16,7 +16,7 @@ XPCService.runServiceWithConnectionHandler ->  connection do
       values = message[:values]
 
       # calculate the product
-      product = values.inject(1.0) { |prod, n| prod * n }
+      product = values.inject(1, :*)
       connection.sendMessage({result: product})
     end
 
@@ -28,7 +28,6 @@ XPCService.runServiceWithConnectionHandler ->  connection do
       # connection._sendLog("data #{data.length} bytes handle #{file_handle}")
       connection.sendMessage({data: data, file_handle: file_handle })
     end
-
 
     connection.sendMessage({ date: NSDate.date }) if message[:operation] == "whatTimeIsIt"
   end
