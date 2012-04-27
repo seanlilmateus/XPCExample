@@ -12,8 +12,8 @@ Since the XPC-Libraries are written in C without any Cocoa wrapping APIs, it was
 
 ###this sample code is a port of the XPCKit sample app
 ###what does it do?
-	the [client](https://github.com/seanlilmateus/XPCExample/blob/master/XPCExample/AppDelegate.rb) sends commands as message, and
-	the [service](https://github.com/seanlilmateus/XPCExample/blob/master/TestService/rb_main.rb) receives this commands, processes it and sends the results back.
+- the [client](https://github.com/seanlilmateus/XPCExample/blob/master/XPCExample/AppDelegate.rb) sends commands as message, and
+- the [service](https://github.com/seanlilmateus/XPCExample/blob/master/TestService/rb_main.rb) receives this commands, processes it and sends the results back.
 
 ##License
 this code is licensed under **you can ask whatever you want, but I don't due you shit**, do something nice with the code and have fun!
